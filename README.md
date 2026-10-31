@@ -2,8 +2,6 @@
 
 A two-ESP32 remote-controlled rover with a 4-axis arm and gripper. A handheld controller (ESP32 + two joysticks + two potentiometers) talks to the rover (ESP32 + servos) over WiFi using UDP. The rover hosts its own WiFi access point, so no router or internet connection is needed.
 
-> **Status:** [work in progress / working prototype - update this]
-
 ## Features
 
 - **Drive and steering** from the left (rover) joystick
@@ -139,7 +137,3 @@ Most tuning lives in constants at the top of each sketch.
 - The gripper is timed, not sensed. It assumes it starts open, and a blocked gripper can slip relative to its estimated position.
 - The arm has no position feedback, so it jumps to its start pose at power-on.
 - Range is that of the ESP32's onboard antenna: roughly a house or large yard. An ESP32 module with an external antenna would extend it.
-
-## License
-
-[Choose a license, e.g. MIT, and add a LICENSE file.]
